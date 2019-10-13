@@ -62,7 +62,7 @@ gcloud components update
 
 ## Set the region
 
-For example, I chose us-central1.
+For example, I chose __us-central1__.
 
 ```
 gcloud config set run/region us-central1
@@ -72,7 +72,7 @@ gcloud config set run/region us-central1
 
 ## Create the Docker image in GCP
 
-Substitute __PROJECT__ with your current gcloud project id:
+Substitute __PROJECT-ID__ with your current gcloud project id:
 
 ```
 gcloud builds submit --tag gcr.io/PROJECT-ID/hello
@@ -102,7 +102,7 @@ To see and manage the container image, browse to:
 
 While Cloud Run is in Beta, you will need to run it as as beta component below:
 
-Substitute __PROJECT__ with your current gcloud project id:
+Substitute __PROJECT-ID__ with your current gcloud project id:
 
 ```
 gcloud beta run deploy hello-web --image gcr.io/PROJECT-ID/hello
@@ -129,7 +129,7 @@ You may then see a message like this:
 To specify the platform yourself, pass `--platform managed`. Or, to make this the default target platform, run `gcloud config set run/platform managed`.
 ```
 
-That's tell you that for the figure you could skip the menu either with a command line or config setting (helpful when running via scripts, etc.)
+That's tell you that for in the future you could skip the menu either with a command line or config setting (helpful when running via scripts, etc.)
 
 Assuming you don't care if anyone runs your app (as in making it public):
 
@@ -142,10 +142,10 @@ If you are concerned about billing, no one will know the URL address if you don'
 The command line will then give you the URL of your app, with a message like this (with your own unique URL):
 
 ```
-Service [hello-web] revision [hello-web-rzwnn] has been deployed and is serving 100 percent of traffic at https://hello-web-SOMETHING-RANDOM-ID.a.run.app
+Service [hello-web] revision [hello-web-abcd] has been deployed and is serving 100 percent of traffic at https://hello-web-SOMETHING-RANDOM-ID.a.run.app
 ```
 
-Copy the URL and paste the address into a browser.
+Copy the URL and paste the address into a browser or use `curl`.
 
 ## See the service in the console
 
