@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-hello-world",
+  "version": "1.0.0",
+  "description": "A single file nodejs server",
+  "main": "hello.js",
+  "scripts": {
+    "start": "node hello.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nodejs", "hello"],
+  "author": "Mitch Allen",
+  "license": "MIT"
+}
