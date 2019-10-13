@@ -129,7 +129,7 @@ You may then see a message like this:
 To specify the platform yourself, pass `--platform managed`. Or, to make this the default target platform, run `gcloud config set run/platform managed`.
 ```
 
-That's tell you that for in the future you could skip the menu either with a command line or config setting (helpful when running via scripts, etc.)
+Which means in the future you could skip the menu either with a command line or config setting (helpful when running via scripts, etc.)
 
 Assuming you don't care if anyone runs your app (as in making it public):
 
