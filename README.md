@@ -142,7 +142,7 @@ If you are concerned about billing, no one will know the URL address if you don'
 The command line will then give you the URL of your app, with a message like this (with your own unique URL):
 
 ```
-Service [hello-web] revision [hello-web-abcd] has been deployed and is serving 100 percent of traffic at https://hello-web-SOMETHING-RANDOM-ID.a.run.app
+Service [hello-web] revision [hello-web-abcd] has been deployed and is serving 100 percent of traffic at https://hello-web-SOME-RANDOM-ID.a.run.app
 ```
 
 Copy the URL and paste the address into a browser or use `curl`.
